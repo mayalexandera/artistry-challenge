@@ -1,0 +1,12 @@
+<h2>Create An Instrument</h2>
+
+<%= form_for @instrument do |i| %>
+<%= i.label :name %>
+<%= i.text_field :name %>
+
+<%= i.label :classification %>
+<%= i.text_field :classification %>
+
+<%= i.submit %>
+
+<% end %>

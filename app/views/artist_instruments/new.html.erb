@@ -1,0 +1,12 @@
+<h2>Select An Artist and Instrument</h2>
+<%= flash[:errors] if flash[:errors] %>
+<%=  form_for @artist_instrument do |ai| %>
+<%= ai.label :artist_id %>
+<%= ai.collection_select :artist_id, @artists, :id, :name %>
+
+<%= ai.label :instrument_id %>
+<%= ai.collection_select :instrument_id, @instruments, :id, :name %>
+
+<%= ai.submit %>
+
+<% end %>

@@ -1,0 +1,10 @@
+<p><%= link_to artist.name, artist_path(artist) %></p>
+<p><%= artist.title %></p>
+<p><%= artist.age %></p> 
+
+<p><% artist.instruments.each do |i| %></p>
+
+<%= i.name %>
+<%= i.classification %>
+
+<% end %>
